@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to "Magical CPRG" data search</title>
+    <!--Author name: Jinwei Hu
+            Student number: 000849618-->
+    <script src="data1.js"></script>
+
+</head>
+
+<body onload="loadData1()">
+
+<div class="main-block">
+    <div class = "tableBody">
+        <legend>
+            <h2>Get information about Traffic Incidents in Calgary</h2>
+        </legend>
+
+        <table>
+            <tr>
+                <td class="tableHeading">Select a type of information you want to search</td>
+
+
+            </tr>
+            <tr>
+                <td><select id="selectKey" class="selectInput">
+                    <option value="placeholder1">Please select the type of key word to search</option>
+                    <option value="info">Incident Information</option>
+                    <option value="des">Description</option>
+                    <option value="date">Date</option>
+                    <option value="count">Count</option>
+                </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class="tableHeading">Enter search Key word here</td>
+            </tr>
+            <tr>
+                <td><input class="searchInput" type="keyWord"  id="key" onkeyup="searchFor1()"></input>
+                </td>
+            </tr>
+
+            <div class="resultArea">
+                <tr>
+                    <td class="tableHeading">Search Result</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div id="container" class="containerSubmit">
+                            <div id="summary"></div>
+                        </div>
+                    </td>
+                </tr>
+            </div>
+
+
+        </table>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>DATA Search Co.</p>
+    <p>3431 Sunnyside, Calgary, AB, Canada</p>
+    <p>403-667-9060</p>
+</footer>
+</body>
+
+</html>

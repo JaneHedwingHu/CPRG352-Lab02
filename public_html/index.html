@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to "Magical CPRG" data search</title>
+    <!--Author name: Jinwei Hu
+            Student number: 000849618-->
+    <script src="data1.js"></script>
+    <script src="data2.js"></script>
+    <script src="data3.js"></script>
+    <script src="data4.js"></script>
+    <script src="index.js"></script>
+    <link href="data.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+          type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Teko:wght@500&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Libre+Baskerville:ital@1&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body onload="hide()">
+<div class="pageHeader">
+    <div>
+
+        <div class="headerText">Welcome to "Magical CPRG" data Search</div>
+    </div>
+</div>
+
+
+<div class="main-block">
+    <div class="tableBody">
+        <legend>
+            <h2>Get information about certain data in Calgary</h2>
+        </legend>
+
+        <table id="datasetSelectorTable">
+            <div class="description">
+                <h2>Description of datasets</h2>
+                <h3>Dataset 1: Traffic Incidents</h3>
+                <p>An archive of traffic incidents within Calgary updated every 10 minutes.</p>
+
+                <h3>Dataset 2: Calgary Public Library Locations and Hours</h3>
+                <p>A list of all Calgary Public Library locations and their hours of operation.</p>
+
+                <h3>Dataset 3: Community Crime Statistics</h3>
+                <p>Data is provided monthly by the Calgary Police Service. This data is considered cumulative as
+                    late-reported incidents are often received well after an offence has occurred. Therefore, crime
+                    counts are subject to change as they are updated.</p>
+
+                <h3>Dataset 4: Building Permits</h3>
+                <p>Building permit applications made to The City of Calgary's Planning & Development department. Visit
+                    the Calgary.ca building permit process FAQ to learn more about The City's building permit
+                    process.</p>
+
+            </div>
+            <tr>
+                <td class="tableHeading">Select a dataset you want to get information from</td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="selectDataset" class="selectInput" onchange="datasetOnClick()">
+                        <option value="placeholder1">Please select a dataset to search</option>
+                        <option value="dataset1">Dataset 1: Traffic Incidents</option>
+                        <option value="dataset2">Dataset 2: Public Library Locations and Hours</option>
+                        <option value="dataset3">Dataset 3: Community Crime Statistics</option>
+                        <option value="dataset4">Dataset 4: Building Permits</option>
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <th class="subtitle" colspan="2">----Choose a dataset first then you could search related information
+                </th>
+            </tr>
+
+
+        </table>
+        <span id="displayApp"></span>
+
+        <div id="container" class="containerSubmit">
+            <p id="summary"></p>
+            <p id="result"></p>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<footer>
+    <p>DATA Search Co.</p>
+    <p>3431 Sunnyside, Calgary, AB, Canada</p>
+    <p>403-667-9060</p>
+</footer>
+</body>
+
+</html>
